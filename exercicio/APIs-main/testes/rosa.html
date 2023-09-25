@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tela Rosa</title>
-<style>
+<title>Doce Sabor</title>
+
+  <head>
+  <style>
+  
+  .header {
+  background-color: yellow; /* Cor de fundo amarela */
+  height: 40px; /* Altura da borda horizontal */
+  width: 300px; /* Largura total */
+  position: fixed; 
+  top: 0; /* Coloca a borda no topo da página */
+  z-index: 1; /* Garante que a borda fique acima de outros elementos */
+  display: flex; /* Para centralizar o texto verticalmente */
+  align-items: center; /* Para centralizar o texto verticalmente */
+  }
+  .header p {
+  margin: 0; /* Remove margens padrão do parágrafo */
+  padding: 10px; /* Espaçamento interno para o texto */
+  font-size: 18px; /* Tamanho da fonte do texto */
+  color: magenta; /* Cor do texto */
+  }
+
   body {
-    background-color: #EF868C;
+    background-color: pink;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -15,7 +34,7 @@
     font-family: Arial, sans-serif;
   }
   .content {
-    text-align: center;
+    /* text-align: left; */
   }
 
   .resized-image {
@@ -24,12 +43,15 @@
 </style>
 </head>
 <body>
+  <div class="header">
+    <p>Doce Sabor | Cardápio</p>
+  </div>
   <div class="content">
     <h1>Doce Sabor Anap</h1>
     <p>Em parceria com Jomila Programas.</p>
     <h2>Palha Italiana</h2>
     <img src="paalha.jpg" alt="Imagem Palha">
-    <h3>R$5,00</h3>
+    <h3 id="valorpalha">5.00</h3>
     <button class="button" onclick="botaoClicado()">Adicionar ao Carrinho</button>
     <h2>Sanduiche</h2>
     <img src="sanduiche.jpg" alt="Imagem Palha">
