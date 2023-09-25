@@ -10,12 +10,13 @@
   .header {
   background-color: yellow; /* Cor de fundo amarela */
   height: 40px; /* Altura da borda horizontal */
-  width: 300px; /* Largura total */
+  width: 100%; /* Largura total */
   position: fixed; 
   top: 0; /* Coloca a borda no topo da página */
   z-index: 1; /* Garante que a borda fique acima de outros elementos */
-  display: flex; /* Para centralizar o texto verticalmente */
-  align-items: center; /* Para centralizar o texto verticalmente */
+  display: inline; /* Para centralizar o texto verticalmente */
+  align-items: center; 
+  text-align: center;/* Para centralizar o texto verticalmente */
   }
   .header p {
   margin: 0; /* Remove margens padrão do parágrafo */
@@ -33,8 +34,11 @@
     min-height: 100vh;
     font-family: Arial, sans-serif;
   }
-  .content {
-    /* text-align: left; */
+  .produtos {
+    float: left; 
+  }
+  .logo {
+    float: right; 
   }
 
   .resized-image {
@@ -46,7 +50,11 @@
   <div class="header">
     <p>Doce Sabor | Cardápio</p>
   </div>
-  <div class="content">
+  <div class="logo">
+    <h1>Doce Sabor Anap</h1>
+    <p>Em parceria com Jomila Programas.</p>
+  </div>
+  <div class="produtos">
     <h1>Doce Sabor Anap</h1>
     <p>Em parceria com Jomila Programas.</p>
     <h2>Palha Italiana</h2>
